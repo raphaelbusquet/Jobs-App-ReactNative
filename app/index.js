@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { View, Text, ScrollView, SafeAreaView } from 'react-native'
+import { View, Text, ScrollView, SafeAreaView, RefreshControl } from 'react-native'
 import { Stack, useRouter } from 'expo-router'
 
 import { COLORS, icons, images, SIZES } from '../constants'
@@ -7,6 +7,10 @@ import { Nearbyjobs, Popularjobs, ScreenHeaderBtn, Welcome } from '../components
 
 const Home = () => {
     const router = useRouter()
+
+    const [refreshing, setRefreshing] = useState(false)
+
+    const onRefresh = () => {}
     
     return (
         <SafeAreaView style={{
@@ -28,7 +32,9 @@ const Home = () => {
                 }}
             />
 
-            <ScrollView showsHorizontalScrollIndicator={false}>
+            <ScrollView showsHorizontalScrollIndicator={false}
+                RefreshControl={<RefreshControl  refreshing={refreshing} onRefresh={onRefresh} />}
+            >
                 <View
                     style={{
                         flex: 1,
