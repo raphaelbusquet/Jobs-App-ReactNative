@@ -1,14 +1,11 @@
-# Expo Router Example
+# These are some screen shots of the project: 
 
-Use [`expo-router`](https://expo.github.io/router) to build native navigation using files in the `app/` directory.
+<img src="./assets/IMG_4603.PNG" alt="Images of the app" width="250" height="500" />
 
-## 🚀 How to use
+<img src="./assets/IMG_4600.PNG" alt="Images of the app" width="250" height="500" /> 
 
-```sh
-npx create-expo-app -e with-router
-```
+<img src="./assets/IMG_4601.PNG" alt="Images of the app" width="250" height="500" /> 
 
-## 📝 Notes
+<img src="./assets/IMG_4602.PNG" alt="Images of the app" width="250" height="500" /> 
 
-- [Expo Router: Docs](https://expo.github.io/router)
-- [Expo Router: Repo](https://github.com/expo/router)
+## The application is totally functional and made with an integration to an API (RapidAPI)
